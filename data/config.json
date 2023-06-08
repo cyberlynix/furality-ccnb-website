@@ -1,0 +1,15 @@
+{
+    "stream_input_id": "Lynix",
+    "vrc_instance_id": "",
+    "custom_notice": "\"I feel like I got ran over by a train.\" - Lynix (Source: Telegram)",
+    "is_sleeping": false,
+    "is_on_break": true,
+    "picture_slideshow": true,
+    "audio": {
+        "mic": false,
+        "aux": true,
+        "bg": false,
+        "cp": false
+    },
+    "streamer_name": ""
+}

@@ -1,27 +1,120 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+/*Body Content*/
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  width:90%;
+margin:auto;
+background-color:#070806;
+font-family:Garamond;
+font-size:20px;
+/* background:url("images/background2.png") no-repeat #070806 center; */
+background-size:cover
+}
+
+body h2 {
+text-align:center; 
+color:#2b8091;
+}
+
+body h4 {
+text-align:center; 
+}
+
+a {
+color:#F7E444;		
+text-decoration:none; 
+}
+
+a:hover { 
+text-decoration: underline; 
+}
+
+/*Furality Logo*/
+#logo {
+height:168px; 
+position:absolute; 
+  top:0px; 
+  left:0px;
+content:url("/images/Furality Sylva Cover.png"); 
+}
+
+/*Banner*/
+#banner {
+  height: 396px;
+  width: 1584px;
+  width:100%;
+margin:auto;
+  background: url("/images/banner.png") no-repeat black center;
+}
+
+/*Center*/
+#centertext {
+color:#908c1c;
+text-align:justify;
+}
+
+#centertext a{
+color:#85ec59;
+text-shadow: 0 0 10px #1a0303;
+}	
+
+#centertext h2{
+color:#0C7B59;
+}	
+
+/*Event Cards - Grid*/
+#eventcardsgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: 0 auto; /* Center the grid container */
+}
+  
+  /*Event Cards - With Information*/
+#eventcards {
+  width: 300px;
+  background-color: #0C7B59;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 10px; /* Add margin for spacing between cards */
+}
+    
+#eventcards img {
+  width: 100%;
+  border-radius: 5px;
+}
+    
+#eventcardsdetails {
+  padding: 10px;
+}
+    
+#eventcardstitle {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #333333;
+}
+    
+#eventcardsdate {
+  margin-top: 5px;
+  color: #777777;
+}
+    
+#eventcardsdescription {
+  margin-top: 5px;
+  color: #777777;
+}
+  
+/*Footer & Logo*/
+#footer {
+clear:left;
+margin-top:30px;
+padding:5px;
+color:#85ec59;
+text-align:center;	
+}
+
+.weather {
+  color: #2b8091;
 }
